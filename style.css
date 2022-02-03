@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Encode+Sans:wght@100&display=swap');
+
+:root{
+    --primary-color: #708090;
+    --secondary-color: rgb(0, 0, 0);
+    --tertiary-color: rgba(133, 156, 167, 0.65);
+}
+
+body{
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-family: Abel, sans-serif;
+    color: black;
+}
+
+#container{
+    height: 555px;
+    width: 360px;
+    margin: 100px auto;
+    background: rgba(160, 188, 197, 0.65);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 20px;
+}
+
+#container:hover{
+    box-shadow: 0 8px 32px 0 rgba(150, 176, 231, 0.37);
+}
+
+.title{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.tipsform{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.forminput{
+    background-color: white;
+    width: 40px;
+    padding: 5px 5px 8px 8px;
+    border: none;
+}
+
+.forminput:focus{
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+
+.formselect{
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* .formsubmit{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: var(--tertiary-color);
+    border-radius: 5px;
+    width: 200px;
+    border: 1px solid var(--secondary-color);
+    height: 50px;
+    font-size: 17px;
+    color: black;
+} */
+
+/* From cssbuttons.io by @CristianMontoya98 */
+button {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 30px auto;
+    background: var(--tertiary-color);
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: rgb(51, 50, 50);
+   }
+   
+   button:after {
+    content: "";
+    background: #708090;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+   }
+
+.formsubmit:hover{
+    border: 2px solid var(--primary-color);
+}
+
+#totaltip{
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
