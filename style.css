@@ -63,21 +63,6 @@ body{
     font-size: 12px;
 }
 
-/* .formsubmit{
-    text-transform: uppercase;
-    font-weight: bold;
-    display: block;
-    margin: 30px auto;
-    background: var(--tertiary-color);
-    border-radius: 5px;
-    width: 200px;
-    border: 1px solid var(--secondary-color);
-    height: 50px;
-    font-size: 17px;
-    color: black;
-} */
-
-/* From cssbuttons.io by @CristianMontoya98 */
 button {
     width: 200px;
     height: 50px;
